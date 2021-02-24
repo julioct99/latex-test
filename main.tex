@@ -1,8 +1,51 @@
-\documentclass{article}
+\documentclass[a4paper,11pt]{report}
+\title{Test}
 \author{Julio Casallo Tamayo}
 
+\pagestyle{headings}
+
+\usepackage{verbatim}
+
 \begin{document}
-  \title{Tengo Hambre}
+  % Generates the title
   \maketitle
+
+  % Generates the table of contents
+  \tableofcontents
+
+  \chapter{Things You Need To Know}
+
+  \section{Testing}
   This is a document.
+
+  It does not matter whether you enter one or   several    
+  spaces after a word.
+  An empty line starts a new paragraph.
+
+  New \TeX users may miss whitespaces after a command.
+  % renders wrong 
+  Experienced \TeX{} users are \TeX perts, and know how to
+  use whitespaces. % renders correct
+
+  You can \textsl{lean} on me!
+
+  Please, start a new line right here! \newline 
+  Thank You!
+
+  This an % stupid
+  % Better: instructive <-----
+  example: Supercal%
+              ifragilist%
+        icexpialidocious
+
+  This is another \begin{comment}
+    rather stupid, 
+    but helpful
+  \end{comment}
+  example for embedding comments in your document.
+
+  \include{tex/module1.tex}
+
+  \chapter{Typesetting Text}
+
 \end{document}
