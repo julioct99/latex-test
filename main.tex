@@ -6,6 +6,21 @@
 
 \usepackage{verbatim}
 
+% Contents table refs
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+% Line under header
+\usepackage{fancyhdr}% http://ctan.org/pkg/fancyhdr
+\pagestyle{fancy}% Change page style to fancy
+
+
 \begin{document}
   % Generates the title
   \maketitle
@@ -47,5 +62,10 @@
   \include{tex/module1.tex}
 
   \chapter{Typesetting Text}
+
+  \newpage
+
+  \section{Testing new page}
+  This is a new page
 
 \end{document}
